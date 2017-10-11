@@ -29,10 +29,8 @@ body{
 }
 
 #middleAmpDetails{
-  font-size: 1.2em;
   position: absolute;
   top: 10%;
-  text-align: left;
   left: 34%;
 }
 
@@ -44,7 +42,7 @@ body{
 .details{
   background-color: white;
   display: inline-block;
-  width: 33%;
+  width: 33%
 }
 
 .detailImage{
@@ -53,6 +51,12 @@ body{
 
 .centerDetails{
   text-align: center;
+}
+
+
+#innerList{
+  padding: 5px;
+  margin-left: 27%;
 }
 
 #mapSection{
