@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: rgb(247, 224, 16);
 }
 .navBar{
   background-color: rgb(39, 39, 182);
@@ -10,7 +10,6 @@ body{
 .basic{
   position: relative;
   text-align: center;
-  border: 1px solid black;
 }
 
 #mainPhotoInfo{
@@ -40,7 +39,7 @@ body{
 }
 
 .details{
-  background-color: white;
+  background-color: rgb(247, 224, 16);
   display: inline-block;
   width: 33%
 }
@@ -59,6 +58,18 @@ body{
   margin-left: 27%;
 }
 
+.lowerText{
+  position: relative;
+  margin-top: 3px;
+  padding: 10px;
+  background-color:  rgb(39, 39, 182);
+  color: white;
+}
+
+#upperBar{
+  height: 70px;
+  width: 100%;
+}
 #mapSection{
   bottom: 0px;
   height: 200px;
