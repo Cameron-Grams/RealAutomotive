@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.navBar{
+  background-color: rgb(39, 39, 182);
+  color: white;
+}
+.basic{
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#mainPhotoInfo{
+  top: 45px; 
+}
+
+#bannerIntro{
+  padding: 15px;
+  background-color: white;
+}
+
+#amplifyingDetails{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+#middleAmpDetails{
+  font-size: 1.2em;
+  position: absolute;
+  top: 10%;
+  text-align: left;
+  left: 34%;
+}
+
+#rightImage{
+  position: absolute;
+  left: 67%;
+}
+
+.details{
+  background-color: white;
+  display: inline-block;
+  width: 33%;
+}
+
+.detailImage{
+  width: 100%;
+}
+
+.centerDetails{
+  text-align: center;
+}
+
+#mapSection{
+  bottom: 0px;
+  height: 200px;
+}
