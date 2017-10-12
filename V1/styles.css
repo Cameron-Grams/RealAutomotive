@@ -2,7 +2,7 @@ body{
   box-sizing: border-box; 
   margin: 0;
   padding: 0;
-  background-color: rgb(247, 224, 16);
+  background-color: rgba(247, 224, 16, 0.6);
 }
 .navBar{
   background-color: rgb(39, 39, 182);
@@ -23,7 +23,7 @@ body{
 }
 
 ul{
-  margin: 0px;
+  margin-top: 0px;
 }
 
 #amplifyingDetails{
@@ -35,24 +35,20 @@ ul{
   }
 
 #smallMiddleAmpDetails{
-    display: inline-block;
-    position: absolute;
-    top: 15%;  /* WTF*/
+    display: none;
   }
 
 #middleAmpDetails{
-  display: none;
-}
+  display: inline-block;
+  margin-top: 10px;
+} 
 
-#rightImage{
-  position: absolute;
-  left: 67%;
-}
+
 
 .details{
-  background-color: rgb(247, 224, 16);
+  background-color: rgba(247, 224, 16, 0.1);
   display: inline-block;
-  width: 33%
+  width: 100%
 }
 
 .detailImage{
@@ -61,12 +57,13 @@ ul{
 
 .centerDetails{
   text-align: center;
+  margin-top: 10px;
 }
 
 
 #innerList{
-  padding: 5px;
-  margin-left: 10%;
+  padding: 0px;
+  margin-left: 35%;
 }
 
 .lowerText{
@@ -79,14 +76,48 @@ ul{
 
 #upperBar{
   margin-top: 0;
-  height: 70px;
+  height: 20px;
   width: 100%;
 }
+
 #mapSection{
   bottom: 0px;
   height: 200px;
 }
 @media only screen and ( min-width: 760px ) {
+  .details{
+    width: 33%;
+  }
+
+  #upperBar{
+    margin-top: 0;
+    height: 50px;
+    width: 100%;
+  }
+
+  #smallMiddleAmpDetails{
+    display: inline-block;
+    position: absolute;
+    top: 15%;  /* WTF*/
+  }
+
+  #middleAmpDetails{
+    display: none;
+  }
+
+  #rightImage{
+    position: absolute;
+    left: 67%;
+  }
+
+  #innerList{
+    padding: 5px;
+    margin-left: 10%;
+  }
+
+
+
+
 
 }
 
