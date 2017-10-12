@@ -29,7 +29,7 @@ body{
 
 #middleAmpDetails{
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 34%;
 }
 
@@ -67,6 +67,7 @@ body{
 }
 
 #upperBar{
+  margin-top: 0;
   height: 70px;
   width: 100%;
 }
