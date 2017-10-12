@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(247, 224, 16);
+}
+.navBar{
+  background-color: rgb(39, 39, 182);
+  color: white;
+}
+.basic{
+  position: relative;
+  text-align: center;
+}
+
+#mainPhotoInfo{
+  top: 45px; 
+}
+
+#bannerIntro{
+  padding: 15px;
+  background-color: white;
+}
+
+#amplifyingDetails{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+#middleAmpDetails{
+  position: absolute;
+  top: 10%;
+  left: 34%;
+}
+
+#rightImage{
+  position: absolute;
+  left: 67%;
+}
+
+.details{
+  background-color: rgb(247, 224, 16);
+  display: inline-block;
+  width: 33%
+}
+
+.detailImage{
+  width: 100%;
+}
+
+.centerDetails{
+  text-align: center;
+}
+
+
+#innerList{
+  padding: 5px;
+  margin-left: 27%;
+}
+
+.lowerText{
+  position: relative;
+  margin-top: 3px;
+  padding: 10px;
+  background-color:  rgb(39, 39, 182);
+  color: white;
+}
+
+#upperBar{
+  height: 70px;
+  width: 100%;
+}
+#mapSection{
+  bottom: 0px;
+  height: 200px;
+}
