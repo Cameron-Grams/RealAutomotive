@@ -1,7 +1,8 @@
 body{
+  box-sizing: border-box; 
   margin: 0;
   padding: 0;
-  background-color: rgb(247, 224, 16);
+  background-color: rgba(247, 224, 16, 0.6);
 }
 .navBar{
   background-color: rgb(39, 39, 182);
@@ -11,7 +12,7 @@ body{
   position: relative;
   text-align: center;
 }
- 
+
 #mainPhotoInfo{
   top: 45px; 
 }
@@ -21,27 +22,33 @@ body{
   background-color: white;
 }
 
-#amplifyingDetails{
-  position: relative;
-  width: 100%;
-  display: inline-block;
+ul{
+  margin-top: 0px;
 }
+
+#amplifyingDetails{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+#smallMiddleAmpDetails{
+    display: none;
+  }
 
 #middleAmpDetails{
-  position: absolute;
-  top: 20%;
-  left: 34%;
-}
+  display: inline-block;
+  margin-top: 10px;
+} 
 
-#rightImage{
-  position: absolute;
-  left: 67%;
-}
+
 
 .details{
-  background-color: rgb(247, 224, 16);
+  background-color: rgba(247, 224, 16, 0.1);
   display: inline-block;
-  width: 33%
+  width: 100%
 }
 
 .detailImage{
@@ -49,16 +56,22 @@ body{
 }
 
 .centerDetails{
+  position: relative;
+  top: 0px;
   text-align: center;
+  margin-top: 5px;
 }
 
 
 #innerList{
-  padding: 5px;
-  margin-left: 27%;
+  position: relative;
+  top: 0px;
+  padding: 0px;
+  margin-left: 35%;
 }
 
 .lowerText{
+  text-align: center;
   position: relative;
   margin-top: 3px;
   padding: 10px;
@@ -68,10 +81,77 @@ body{
 
 #upperBar{
   margin-top: 0;
-  height: 70px;
+  height: 20px;
   width: 100%;
 }
+
 #mapSection{
   bottom: 0px;
   height: 200px;
+}
+@media only screen and ( min-width: 760px ) {
+  .details{
+    width: 33%;
+  }
+
+  #upperBar{
+    margin-top: 0;
+    height: 50px;
+    width: 100%;
+  }
+
+  #smallMiddleAmpDetails{
+    display: inline-block;
+    position: absolute;
+    top: 15%;  /* WTF*/
+  }
+
+  #middleAmpDetails{
+    display: none;
+  }
+
+  #rightImage{
+    position: absolute;
+    left: 67%;
+  }
+
+  #innerList{
+    padding: 5px;
+    margin-left: 10%;
+  }
+
+
+  .centerDetails{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+
+
+
+
+}
+
+
+@media only screen and ( min-width: 1060px ) {
+  #smallMiddleAmpDetails{
+    display: none;
+  }
+  #middleAmpDetails{
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 34%;
+  } 
+
+  #innerList{
+    position: relative;
+    top: -20px;
+    padding: 0px;
+    margin-left: 30%;
+  }
+
+
 }
