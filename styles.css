@@ -5,7 +5,7 @@ body{
   background-color: rgba(247, 224, 16, 0.6);
 }
 .navBar{
-  position: absolute;
+position: relative;
   top: 0px;
   width: 100%;
   background-color: rgb(39, 39, 182);
@@ -19,8 +19,8 @@ body{
 #mainPhoto{
   margin-top: 0px; 
 }
-
 #bannerIntro{
+  position: relative;
   padding: 15px;
   background-color: white;
 }
