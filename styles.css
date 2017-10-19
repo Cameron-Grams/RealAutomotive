@@ -135,7 +135,7 @@ ul{
   position: relative;
   top: 0px;
   padding: 0px;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .lowerText{
@@ -228,7 +228,7 @@ ul{
   }
 
   #mapSection{
-    height: 500px;
+    height: 750px;
   }
 
 }
