@@ -50,7 +50,7 @@ a{
   background-color: white;
   border: 1px solid black;
   border-radius: 15px;
-  width: 35%;
+  width: 95%;
   margin: auto;
   margin-top: 15%;
   padding: 15px;
@@ -210,6 +210,11 @@ ul{
 
 /* large screens */
 @media only screen and ( min-width: 1060px ) {
+
+  .contactDetails{
+    width: 35%;
+  }
+
   #smallMiddleAmpDetails{
     display: none;
   }
