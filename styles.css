@@ -38,7 +38,6 @@ a{
 #contactModal{
   display: none;
   position: fixed;
-  font-size: 2em;
   top: 0;
   height: 100%;
   width: 100%;
@@ -50,7 +49,7 @@ a{
   background-color: white;
   border: 1px solid black;
   border-radius: 15px;
-  width: 95%;
+  width: 35%;
   margin: auto;
   margin-top: 15%;
   padding: 15px;
@@ -76,6 +75,7 @@ a{
   background-color: rgba(247, 224, 16, 0.745);
   color: black;
 }
+
 .basic{
   position: relative;
   text-align: center;
@@ -100,18 +100,19 @@ ul{
     display: inline-block;
     padding: 0;
     margin: 0;
-  }
+}
 
-#smallMiddleAmpDetails{
-    display: none;
-  }
+#largeAmpDetails{
+  display: none;
+}
 
-#middleAmpDetails{
-  display: inline-block;
-  margin-top: 10px;
-} 
+#systemList{
+  margin-top: 20px;
+}
 
-
+#specialtyTitle{
+  text-align: center;
+}
 
 .details{
   background-color: rgba(247, 224, 16, 0.1);
@@ -123,19 +124,11 @@ ul{
   width: 100%;
 }
 
-.centerDetails{
-  position: relative;
-  top: 0px;
-  text-align: center;
-  margin-top: 5px;
-}
- 
-
 #innerList{
   position: relative;
   top: 0px;
   padding: 0px;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 
 .lowerText{
@@ -145,13 +138,6 @@ ul{
   background-color:  rgb(16, 16, 85);
   color: white;
   z-index: 2;
-}
-
-#upperBar{
-  margin-top: 0;
-  padding: 0;
-  height: 3px;
-  width: 100%;
 }
 
 #mapSection{
@@ -175,12 +161,6 @@ ul{
     margin-top: 0;
     height: 3px;
     width: 100%;
-  }
-
-  #smallMiddleAmpDetails{
-    display: inline-block;
-    position: absolute;
-    top: 15%;  /* WTF*/
   }
 
   #middleAmpDetails{
@@ -211,29 +191,86 @@ ul{
 /* large screens */
 @media only screen and ( min-width: 1060px ) {
 
-  .contactDetails{
-    width: 35%;
+  #bannerIntro{
+    font-size: 1.5em;
   }
 
-  #smallMiddleAmpDetails{
+  .smallMiddleAmpDetails{
     display: none;
   }
   #middleAmpDetails{
-    display: inline-block;
-    position: absolute;
-    top: 20%;
-    left: 34%;
+    display: none;
   } 
 
-  #innerList{
+  .details{
+    display: none;
+  }
+
+  .lowerText{
+    margin-top: 40px;
+  }
+
+  #largeAmpDetails{
+    color: inherit; 
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #innerLargeDisplay{
+    background-color: white;
     position: relative;
-    top: -20px;
-    padding: 0px;
+    display: inline-block;
+    border: 5px solid rgb(16, 16, 85);
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+  }
+
+  #leftSideImages{
+    display: inline-block;
+    width: 45%;
+    border: 1px solid rgb( 16, 16, 85);
+  }
+
+  #rightSideText{
+    background-color: white;
+    display: inline-block;
+    float: right;
+    width: 55%;
+    height: 100%;
+  }
+
+  .detailImage{
+    width: 100%;
+    margin: 0;
+  }
+  
+  .largeDetails{
+    margin-top: 100px;
+  }
+
+  #systemList{
+    list-style: none;
+  }
+
+  #specialtyTitle{
+    text-align: inherit;
+  }
+  
+  #specialtyList{
+    text-align: left;
     margin-left: 25%;
   }
 
+  #lowPortionText{
+    margin: 40px;
+    font-weight: bold;
+  }
+
   #mapSection{
-    height: 750px;
+    height: 500px;
   }
 
 }

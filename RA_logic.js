@@ -6,7 +6,7 @@ function returnSite(){
     $('#contactModal').css("display", "none");
 }
 
-
+ 
 function initMap(){
   var garageLocation = { lat: 34.724221, lng: -76.7370959};
   var mapProp = {

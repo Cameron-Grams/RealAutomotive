@@ -100,21 +100,19 @@ ul{
     display: inline-block;
     padding: 0;
     margin: 0;
-  }
-
-#smallMiddleAmpDetails{
-    display: none;
-  }
-
-#middleAmpDetails{
-  display: inline-block;
-  margin-top: 10px;
-} 
+}
 
 #largeAmpDetails{
   display: none;
 }
 
+#systemList{
+  margin-top: 20px;
+}
+
+#specialtyTitle{
+  text-align: center;
+}
 
 .details{
   background-color: rgba(247, 224, 16, 0.1);
@@ -125,14 +123,6 @@ ul{
 .detailImage{
   width: 100%;
 }
-
-.centerDetails{
-  position: relative;
-  top: 0px;
-  text-align: center;
-  margin-top: 5px;
-}
- 
 
 #innerList{
   position: relative;
@@ -148,13 +138,6 @@ ul{
   background-color:  rgb(16, 16, 85);
   color: white;
   z-index: 2;
-}
-
-#upperBar{
-  margin-top: 0;
-  padding: 0;
-  height: 3px;
-  width: 100%;
 }
 
 #mapSection{
@@ -178,12 +161,6 @@ ul{
     margin-top: 0;
     height: 3px;
     width: 100%;
-  }
-
-  #smallMiddleAmpDetails{
-    display: inline-block;
-    position: absolute;
-    top: 15%;  /* WTF*/
   }
 
   #middleAmpDetails{
@@ -213,7 +190,12 @@ ul{
 
 /* large screens */
 @media only screen and ( min-width: 1060px ) {
-  #smallMiddleAmpDetails{
+
+  #bannerIntro{
+    font-size: 1.5em;
+  }
+
+  .smallMiddleAmpDetails{
     display: none;
   }
   #middleAmpDetails{
@@ -229,6 +211,7 @@ ul{
   }
 
   #largeAmpDetails{
+    color: inherit; 
     display: inline-block;
     padding: 20px;
     width: 100%;
@@ -236,20 +219,19 @@ ul{
   }
 
   #innerLargeDisplay{
-    background-color: white; 
+    background-color: white;
     position: relative;
     display: inline-block;
-    border: 3px solid blue;
+    border: 5px solid rgb(16, 16, 85);
     border-radius: 10px;
-    margin: 20px;
-    width: 85%;
+    width: 75%;
     margin: auto;
   }
 
   #leftSideImages{
     display: inline-block;
     width: 45%;
-    border: 1px solid black;
+    border: 1px solid rgb( 16, 16, 85);
   }
 
   #rightSideText{
@@ -260,19 +242,32 @@ ul{
     height: 100%;
   }
 
+  .detailImage{
+    width: 100%;
+    margin: 0;
+  }
+  
   .largeDetails{
-    margin-top: 120px;
+    margin-top: 100px;
   }
 
   #systemList{
     list-style: none;
   }
 
+  #specialtyTitle{
+    text-align: inherit;
+  }
+  
   #specialtyList{
     text-align: left;
-    margin-left: 20%;
+    margin-left: 25%;
   }
 
+  #lowPortionText{
+    margin: 40px;
+    font-weight: bold;
+  }
 
   #mapSection{
     height: 500px;
