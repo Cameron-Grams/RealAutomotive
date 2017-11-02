@@ -110,9 +110,14 @@ ul{
   margin-top: 20px;
 }
 
-#specialtyTitle{
+#upperSpecialtyTitle{
   text-align: center;
 }
+
+#lowerSpecialtyTitle{
+  text-align: center;
+}
+
 
 .details{
   background-color: rgba(247, 224, 16, 0.1);
@@ -153,49 +158,28 @@ ul{
 
 /* middle sized screens */
 @media only screen and ( min-width: 760px ) {
-  .details{
-    width: 33%;
-  }
 
-  #upperBar{
-    margin-top: 0;
-    height: 3px;
-    width: 100%;
-  }
-
-  #middleAmpDetails{
+  #lowerSpecialtyTitle{
     display: none;
   }
 
-  #rightImage{
-    position: absolute;
-    left: 67%;
+  #lowerSpecialtyList{
+    display: none;
   }
 
-  #innerList{
-    padding: 5px;
-    margin-left: 10%;
+  #lowPortionText{
+    display: none;
   }
-
-
-  .centerDetails{
-    position: relative;
-    top: -20px;
-    text-align: center;
-    margin-top: 5px;
-  }
-
 
 }
 
 /* large screens */
 @media only screen and ( min-width: 1060px ) {
-
   #bannerIntro{
     font-size: 1.5em;
   }
 
-  .smallMiddleAmpDetails{
+  .smallAmpDetails{
     display: none;
   }
   #middleAmpDetails{
@@ -207,7 +191,7 @@ ul{
   }
 
   .lowerText{
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   #largeAmpDetails{
@@ -248,24 +232,41 @@ ul{
   }
   
   .largeDetails{
-    margin-top: 100px;
+    margin-top: 5%;
   }
 
   #systemList{
     list-style: none;
+    line-height: 1.5em;
   }
 
-  #specialtyTitle{
+  #upperSpecialtyTitle{
+    display: none;
+  }
+
+  #upperSpecialtyTitle{
+    display: none;
+  }
+
+  #lowerSpecialtyTitle{
     text-align: inherit;
   }
   
-  #specialtyList{
+  #lowerSpecialtyList{
     text-align: left;
     margin-left: 25%;
+    line-height: 1.5em;
+  }
+  #topPortionText{
+    margin-top: 10%;
+  }
+
+  #middlePortionText{
+    margin-top: 10%;
   }
 
   #lowPortionText{
-    margin: 40px;
+    margin-top: 10%;
     font-weight: bold;
   }
 
@@ -274,3 +275,22 @@ ul{
   }
 
 }
+
+
+@media only screen and ( min-width: 1160px ) {
+
+ #lowerSpecialtyTitle{
+    display: block;
+  }
+
+  #lowerSpecialtyList{
+    display: block;
+  }
+
+}
+
+@media only screen and ( min-width: 1215px ) {
+
+  #lowPortionText{
+    display: block;
+  }
