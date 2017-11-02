@@ -81,6 +81,10 @@ a{
   text-align: center;
 }
 
+#shopTitle{
+  font-size: 2em;
+}
+
 #mainPhoto{
   margin-top: 0px; 
 }
@@ -101,6 +105,11 @@ ul{
     padding: 0;
     margin: 0;
 }
+
+
+.middleAmpDetails{
+  display: none;
+} 
 
 #largeAmpDetails{
   display: none;
@@ -156,21 +165,61 @@ ul{
 }
 
 
+#lowerSpecialtyTitle{
+  display: none;
+}
+
+#lowerSpecialtyList{
+  display: none;
+}
+
+#lowPortionText{
+  display: none;
+}
+
+
 /* middle sized screens */
 @media only screen and ( min-width: 760px ) {
 
-  #lowerSpecialtyTitle{
+  .smallAmpDetails{
     display: none;
   }
 
-  #lowerSpecialtyList{
+  #rightImage{
     display: none;
   }
 
-  #lowPortionText{
-    display: none;
+  .middleAmpDetails{
+    display: block;
+  } 
+
+  #outerMid{
+    width: 100%;
+    text-align: center;
   }
 
+  #innerMid{
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+  }
+  #midSpecialtyTitle{
+    display: block;
+  }
+
+  #midSpecialtyList{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+  }
+
+  #midSystemList{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    text-align: left;
+    font-size: 1.4em;
+  }
 }
 
 /* large screens */
@@ -179,10 +228,7 @@ ul{
     font-size: 1.5em;
   }
 
-  .smallAmpDetails{
-    display: none;
-  }
-  #middleAmpDetails{
+  .middleAmpDetails{
     display: none;
   } 
 
