@@ -259,6 +259,7 @@ ul{
     border: 5px solid rgb(16, 16, 85);
     border-radius: 10px;
     width: 75%;
+    max-width: 940px;
     margin: auto;
   }
 
