@@ -49,7 +49,7 @@ a{
   background-color: white;
   border: 1px solid black;
   border-radius: 15px;
-  width: 35%;
+  width: 85%;
   margin: auto;
   margin-top: 15%;
   padding: 15px;
@@ -120,6 +120,7 @@ ul{
 }
 
 #upperSpecialtyTitle{
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -180,6 +181,9 @@ ul{
 
 /* middle sized screens */
 @media only screen and ( min-width: 760px ) {
+  .contactDetails{
+    width: 35%;
+  }
 
   .smallAmpDetails{
     display: none;
@@ -255,6 +259,7 @@ ul{
     border: 5px solid rgb(16, 16, 85);
     border-radius: 10px;
     width: 75%;
+    max-width: 940px;
     margin: auto;
   }
 
@@ -300,7 +305,7 @@ ul{
   
   #lowerSpecialtyList{
     text-align: left;
-    margin-left: 25%;
+    margin-left: 20%;
     line-height: 1.5em;
   }
   #topPortionText{
